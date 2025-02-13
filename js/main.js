@@ -123,7 +123,7 @@
                 // Success: Show success message or redirect
                 alert('Your message has been sent successfully!');
                 // Optional: Redirect to a thank you page
-                window.location.href = 'https://www.yoursite.com/thank-you'; 
+                window.location.href = 'https://www.harvestguesthouse.co.za'; 
             } else {
                 // Error: Show error message
                 alert('There was an error sending your message. Please try again.');
