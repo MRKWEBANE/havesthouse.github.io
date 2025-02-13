@@ -195,41 +195,23 @@
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form action="https://web3forms.com/api/v1/submit" method="POST">
-				     <input type="hidden" name="access_key" value="2b7923f0-58b0-46a2-ab4b-a9fde61bbd83">
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                <label for="name">Your Name</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                <label for="email">Your Email</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-floating">
-                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                <label for="subject">Subject</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
-                <label for="message">Message</label>
-            </div>
-        </div>
-        <div class="col-12">
-            <!-- Web3Forms Hidden Fields -->
-           
-            
-            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-        </div>
-    </div>
-</form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                            <div class="row g-3">
+                                <input type="hidden" name="access_key" value="1e8198ed-838b-4051-bcda-ecb276e76fb1">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="name" required placeholder="Your Name" class="form-control border-0"  style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" name="email" required placeholder="Your email" class="form-control border-0"  style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" name="message" required placeholder="Your message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
 
                         </div>
                     </div>
