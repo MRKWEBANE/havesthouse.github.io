@@ -106,34 +106,7 @@
     });
 
     // Web3Forms Form Handling Script
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevent the default form submission behavior
-
-        var formData = new FormData(this); // Gather the form data
-        var formAction = this.action;  // Web3Forms API endpoint
-
-        // AJAX form submission to Web3Forms
-        fetch(formAction, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Success: Show success message or redirect
-                alert('Your message has been sent successfully!');
-                // Optional: Redirect to a thank you page
-                window.location.href = 'https://www.harvestguesthouse.co.za'; 
-            } else {
-                // Error: Show error message
-                alert('There was an error sending your message. Please try again.');
-            }
-        })
-        .catch(error => {
-            // Handle network or other errors
-            alert('An error occurred. Please try again later.');
-        });
-    });
+   
     
 })(jQuery);
 
